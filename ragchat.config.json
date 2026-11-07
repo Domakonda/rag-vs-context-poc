@@ -1,0 +1,60 @@
+{
+  "llm": {
+    "provider": "openai",
+    "providers": {
+      "openai": {
+        "model": "gpt-6-astra",
+        "api_key_env": "OPENAI_API_KEY",
+        "base_url": null,
+        "max_output_tokens": 4096,
+        "reasoning_effort": "medium",
+        "context_window_tokens": null,
+        "pricing_usd_per_1m": { "input": null, "cached_input": null, "output": null }
+      }
+    }
+  },
+
+  "embedding": {
+    "provider": "openai",
+    "providers": {
+      "openai": {
+        "model": "text-embedding-3-small",
+        "api_key_env": "OPENAI_API_KEY",
+        "base_url": null,
+        "dimensions": 1536,
+        "max_input_tokens": 8191,
+        "batch_size": 100,
+        "pricing_usd_per_1m": { "input": null }
+      }
+    }
+  },
+
+  "vector_store": {
+    "type": "chroma",
+    "persist_dir": "storage/chroma",
+    "collection_prefix": "ragchat",
+    "distance": "cosine"
+  },
+
+  "data": {
+    "source_dir": "data",
+    "file_types": [".csv", ".json", ".jsonl"],
+    "flatten_nested_json": true
+  },
+
+  "rag": {
+    "top_k": 8,
+    "rows_per_chunk": 20,
+    "min_score": null
+  },
+
+  "full_context": {
+    "max_input_tokens": 300000,
+    "max_cost_usd_per_query": 2.0,
+    "serialize_as": "csv"
+  },
+
+  "runs": {
+    "log_dir": "runs"
+  }
+}

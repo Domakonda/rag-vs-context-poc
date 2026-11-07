@@ -1,0 +1,22 @@
+# Python / uv
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# Secrets
+.env
+
+# Local generated data
+storage/
+runs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
