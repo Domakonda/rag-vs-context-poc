@@ -10,6 +10,12 @@ build/
 
 # Secrets
 .env
+.env.*
+!.env.example
+
+# Datasets: keep the folder, never commit its contents
+data/*
+!data/.gitkeep
 
 # Local generated data
 storage/

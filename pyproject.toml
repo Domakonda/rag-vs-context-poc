@@ -13,6 +13,7 @@ dependencies = [
     "python-dotenv>=1.2.4",
     "streamlit>=1.67.0",
     "tiktoken>=0.14.0",
+    "truststore>=0.10.5",
 ]
 
 [project.scripts]

@@ -3,13 +3,13 @@
     "provider": "openai",
     "providers": {
       "openai": {
-        "model": "gpt-6-astra",
+        "model": "gpt-6-luna",
         "api_key_env": "OPENAI_API_KEY",
         "base_url": null,
         "max_output_tokens": 4096,
         "reasoning_effort": "medium",
-        "context_window_tokens": null,
-        "pricing_usd_per_1m": { "input": null, "cached_input": null, "output": null }
+        "context_window_tokens": 1050000,
+        "pricing_usd_per_1m": { "input": 0.10, "cached_input": null, "output": 0.50 }
       }
     }
   },
@@ -18,10 +18,10 @@
     "provider": "openai",
     "providers": {
       "openai": {
-        "model": "text-embedding-3-small",
+        "model": "text-embedding-3-large",
         "api_key_env": "OPENAI_API_KEY",
         "base_url": null,
-        "dimensions": 1536,
+        "dimensions": null,
         "max_input_tokens": 8191,
         "batch_size": 100,
         "pricing_usd_per_1m": { "input": null }
